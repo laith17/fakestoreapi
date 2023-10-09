@@ -4,7 +4,7 @@ FakeStoreAPI is a free online REST API that you can use whenever you need Pseudo
 
 # Deployment
 
-Deployed Website: [https://School-System.com](https://laith17.github.io/School-system/).
+Deployed Website: [https://FakeStoreAPI.com](https://laith17.github.io/fakestoreapi/).
 
 # Skills Used
 
