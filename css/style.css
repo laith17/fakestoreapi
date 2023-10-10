@@ -136,7 +136,8 @@ body {
 
 /** Start Products */
 
-#products {
+#products,
+#posts {
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 5rem;
@@ -188,16 +189,25 @@ body {
 
 /** Start CRUD */
 
+.crud {
+  margin-top: 10rem;
+  background-color: var(--hover-color);
+  border-radius: 1rem;
+  padding: 6rem 3rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   gap: 4rem;
   font-size: 2rem;
-  padding: 3rem;
+  padding: 0rem 3rem;
+  margin-bottom: 10rem;
 }
 
 .form .form-box {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -214,15 +224,24 @@ body {
   height: 4rem;
   font-size: 2rem;
   background-color: var(--white-color);
+  width: 25%;
 }
 
 .form label {
   font-weight: 700;
 }
 
-#submit {
+.form textarea {
+  padding: 0.7rem;
+  font-size: 2rem;
+  background-color: var(--white-color);
+}
+
+#submit,
+.delete,
+.update {
   cursor: pointer;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   margin: 1rem auto;
   height: 5rem;
   background-color: var(--primary-color);
@@ -234,7 +253,56 @@ body {
 }
 
 #submit:hover {
-  background-color: var(--hover-color);
+  background-color: var(--secondary-color);
+  color: #000;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.posts .card {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.posts .card .text-box {
+  padding: 3rem;
+  color: #1a1a1a;
+}
+
+.posts .card .text-box #title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.posts .card .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.posts .card .buttons .delete {
+  background-color: #ff1a1a;
+}
+
+.posts .card .buttons .update {
+  background-color: #1a941a;
+}
+
+.posts .card .buttons .delete:hover {
+  background-color: #e60000;
+}
+
+.posts .card .buttons .update:hover {
+  background-color: #007a00;
 }
 
 /** End CRUD */
